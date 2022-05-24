@@ -5,17 +5,14 @@ let cognomeIndex = 0
 let nomeRandom = ""
 let cognomeRandom = ""
 
-
 for (let i = 0; i < nomi.length; i++) {
-  nomeIndex = (Math.floor(Math.random() * nomi.lenght));
-  nomeRandom = (nomi[nomeIndex]);
-  console.log(nomeRandom);
+  nomeIndex = (parseInt (Math.floor(Math.random() * nomi.length)));
+  nomeRandom = nomi[nomeIndex];
 }
 
-for (let i = 0; i < cognomi.length; i++) {
-  cognomeIndex = (Math.floor(Math.random() * cognomi.lenght));
-  cognomeRandom = (cognomi[cognomeIndex]);
-  console.log(cognomeRandom);
+for (let j = 0; j < cognomi.length; j++) {
+  cognomeIndex = (parseInt (Math.floor(Math.random() * cognomi.length)));
+  cognomeRandom = cognomi[cognomeIndex];
 }
 
-console.log(toString(nomeRandom + cognomeRandom));
+console.log(nomeRandom + cognomeRandom);
